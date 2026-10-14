@@ -4,7 +4,8 @@ Este repositorio público contiene **solo instaladores versionados**. El código
 
 ## Versiones
 
-- [`v0.1.6/install.sh`](v0.1.6/install.sh) — versión recomendada; acepta paquetes con `VERSION` en formato Windows.
+- [`v0.1.7/install.sh`](v0.1.7/install.sh) — versión recomendada; mejora la capacidad del CDN para más de 1000 clientes simultáneos.
+- [`v0.1.6/install.sh`](v0.1.6/install.sh) — versión anterior; acepta paquetes con `VERSION` en formato Windows.
 - [`v0.1.5/install.sh`](v0.1.5/install.sh) — versión anterior; instala Docker en Ubuntu 22.04 o superior si falta.
 - [`v0.1.4/install.sh`](v0.1.4/install.sh) — versión anterior.
 - [`v0.1.3/install.sh`](v0.1.3/install.sh) — versión anterior.
@@ -16,10 +17,10 @@ Este repositorio público contiene **solo instaladores versionados**. El código
 
 Linux, Git y una **llave SSH autorizada para leer** `edgardoalvarez100/cdn-edge-agent`. También necesita el identificador y token de un servidor creado en [el panel](https://panel.cenetwork.com.co). Sin acceso SSH al repositorio privado, el instalador no puede obtener el agente. En Ubuntu 22.04 o superior, el agente instala automáticamente Docker Engine y el plugin Compose desde el repositorio oficial de Docker si faltan; para ello requiere `sudo` o root y acceso a Internet. En otras distribuciones, Docker Engine y Compose deben estar instalados antes de comenzar.
 
-## Instalar o actualizar a v0.1.6
+## Instalar o actualizar a v0.1.7
 
 ```sh
-curl -fL -o install-cdn.sh https://raw.githubusercontent.com/edgardoalvarez100/cdn-edge-installers/main/v0.1.6/install.sh
+curl -fL -o install-cdn.sh https://raw.githubusercontent.com/edgardoalvarez100/cdn-edge-installers/main/v0.1.7/install.sh
 sh install-cdn.sh
 ```
 
